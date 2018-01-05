@@ -444,6 +444,9 @@ class ES(object):
         if params:
             for k in params:
                 params[k] = str(params[k])
+
+        headers['Content-Type'] = 'application/json'
+
         request = RestRequest(method=Method._NAMES_TO_VALUES[method.upper()],
                               uri=path, parameters=params, headers=headers, body=body)
         if self.dump_curl is not None:
