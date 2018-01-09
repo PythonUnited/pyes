@@ -63,7 +63,7 @@ class QuickRunTests(TestCommand):
 install_requires = ["urllib3>=1.7", "six>=1.5.2"]
 
 #if not sys.platform.startswith("java"):
-#    install_requires += [ "thrift", ]    
+#    install_requires += [ "thrift", ]
 try:
     import importlib
 except ImportError:
@@ -94,7 +94,7 @@ else:
 
 setup(
     name='pyes',
-    version=meta['VERSION'],
+    version='0.99.7-pu',
     description="Python Elastic Search driver",
     author=meta['author'],
     author_email=meta['contact'],
